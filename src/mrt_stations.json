@@ -1,0 +1,64 @@
+{
+  "stations": [
+    {
+      "id": "BL14",
+      "poiId": "2087",
+      "name": "BL14 พหลโยธิน",
+      "location": { "latitude": 13.8140295, "longitude": 100.5594497 }
+    },
+    {
+      "id": "BL15/YL01",
+      "poiId": "2063",
+      "name": "BL15 ลาดพร้าว",
+      "location": { "latitude": 13.8059147, "longitude": 100.5730845 }
+    },
+    {
+      "id": "BL16",
+      "poiId": "2075",
+      "name": "BL16 รัชดาภิเษก",
+      "location": { "latitude": 13.7990521, "longitude": 100.5750155 }
+    },
+    {
+      "id": "BL17",
+      "poiId": "2051",
+      "name": "BL17 สุทธิสาร",
+      "location": { "latitude": 13.7897908, "longitude": 100.5739976 }
+    },
+    {
+      "id": "BL18",
+      "poiId": "2054",
+      "name": "BL18 ห้วยขวาง",
+      "location": { "latitude": 13.7780833, "longitude": 100.5736769 }
+    },
+    {
+      "id": "BL19/OR13",
+      "poiId": "2081",
+      "name": "BL19 ศูนย์วัฒนธรรมแห่งประเทศไทย",
+      "location": { "latitude": 13.7655319, "longitude": 100.5704482 }
+    },
+    {
+      "id": "BL20",
+      "poiId": "2084",
+      "name": "BL20 พระราม 9",
+      "location": { "latitude": 13.757222, "longitude": 100.565278 }
+    },
+    {
+      "id": "BL21",
+      "poiId": "2045",
+      "name": "BL21 เพชรบุรี",
+      "location": { "latitude": 13.7484275, "longitude": 100.5629096 }
+    },
+    {
+      "id": "BL22",
+      "poiId": "2057",
+      "name": "BL22 สุขุมวิท",
+      "location": { "latitude": 13.738611, "longitude": 100.561389 }
+    },
+    {
+      "id": "BL23",
+      "poiId": "2069",
+      "name": "BL23 ศูนย์การประชุมแห่งชาติสิริกิติ์",
+      "location": { "latitude": 13.7230907, "longitude": 100.5588924 }
+    }
+  ]
+}
