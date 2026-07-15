@@ -2,26 +2,33 @@
 
 Rust scraper for PropertyHub condo-for-rent listings.
 
-Default target:
+Default preset:
 
-`https://propertyhub.in.th/en/condo-for-rent/mrt-huai-khwang`
+`NearHuaikhwang`
 
-Run:
+Other presets:
+
+- `NearSuttisan`
+- `NearMrtRatchadaPisak`
+- `NearLadPhrao`
+- `ALL`
+
+Run default scrape:
 
 ```bash
-cargo run -- --zone-id 313 --locale TH --max-price 10000 --per-page 60 --max-pages 1
+cargo run -- --near-mrt NearHuaikhwang --locale TH --max-price 10000 --per-page 60 --max-pages 1
 ```
 
-Fetch all pages:
+Fetch all preset pages and merge results:
 
 ```bash
-cargo run -- --all
+cargo run -- --near-mrt ALL --all
 ```
 
 CSV output:
 
 ```bash
-cargo run -- --format csv
+cargo run -- --near-mrt ALL --format csv
 ```
 
 Disable project-page enrichment:
@@ -30,4 +37,18 @@ Disable project-page enrichment:
 cargo run -- --no-project-details
 ```
 
-Output is JSON by default. Each listing includes GraphQL listing data plus project-page detail fields.
+Walk distance uses OSRM. Default base URL:
+
+`https://router.project-osrm.org`
+
+Override it with:
+
+```bash
+OSRM_BASE_URL=https://your-osrm.example cargo run -- --near-mrt NearSuttisan
+```
+
+JSON is default output. CSV columns:
+
+`Id,Name,Link,Built,Rent Price,Near MRT,Distance(m),Area(m*m),Fl,Total Fl,Direction,Parking,Note`
+
+Each listing includes GraphQL listing data plus project-page detail fields.
